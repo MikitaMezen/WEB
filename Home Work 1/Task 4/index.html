@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
 
+.position {
+   width: auto;
+   height: auto;
+   background: #333;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.square_red {
+  background-color: red;
+  width: 31%;
+  height: 50px;
+  margin: 1%;
+}
+
+.square_orange {
+  background-color: orange;
+  display flex;
+  width: 61%;
+  height: 50px;
+  margin: 1%;
+}
+
+.square_green {
+  background-color: green;
+  display: flex;
+  margin: 1%;
+  width: 94%;
+  height: 300px;
+}
+
+.square_brown {
+  background-color: #802b00;
+  margin: 1%;
+  width: 30%;
+  height: 100px;
+}
+
+.square_blue {
+  background-color: #0000cc;
+  margin: 1%;
+  width: 30%;
+  height: 100px;
+}
+
+.square_eggplant {
+  background-color: #660066;
+  margin: 1%;
+  width: 30%;
+  height: 100px;
+}
+
+@media only screen and (max-width: 1024px) {
+.square_red {
+  order: 3;
+  width: 94%;
+  height: 300px;
+}
+
+.square_orange {
+  order: 1;
+  width: 31%;
+  height: 50px;
+}
+
+.square_green {
+  order: 4;
+  width: 46%;
+  height: 100px;
+}
+
+.square_brown {
+  display: none;
+}
+
+.square_blue {
+  order: 5;
+  width: 46%;
+  height: 100px;
+}
+
+.square_eggplant {
+  order: 2;
+  width: 61%;
+  height: 50px;
+}
+}
+@media only screen and (max-width: 512px) {
+.square_red {
+  order: 3;
+  width: 94%;
+  height: 400px;
+}
+
+.square_orange {
+  display: none;
+}
+
+.square_green {
+  order: 1;
+  width: 94%;
+  height: 100px;
+}
+
+.square_brown {
+  display: none;
+}
+
+.square_blue {
+  display: none;
+}
+
+.square_eggplant {
+  order: 2;
+  width: 94%;
+  height: 100px;
+}
+}
+
+</style>
+</head>
+<body class="position">
+    <div class="container">
+	<div class="square_red"></div>
+        <div class="square_orange"></div>
+        <div class="square_green"></div>
+        <div class="square_brown"></div>
+	<div class="square_blue"></div>
+	<div class="square_eggplant"></div>
+    </div>
+</body>
+</html>
