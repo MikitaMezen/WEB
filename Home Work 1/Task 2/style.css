@@ -1,0 +1,28 @@
+#figure_red {
+    width: 100px;
+    height: 100px;
+    background: red;
+    position: absolute;
+    left: 70px;
+    top: 70px;
+}
+
+#figure_blue {
+    width: 100px;
+    height: 100px;
+    background: blue;
+}
+
+#figure_green {
+    width: 100px;
+    height: 100px;
+    background: #ADFF2F;
+    position: center;
+    position: absolute;
+    left: 35px;
+    top: 35px;
+}
+
+.container {
+    border: 12px;
+}
