@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="./index.js" defer></script>
+</head>
+
+<body>
+    <div class="accordion" id="accordionExample">
+        <div class="card">
+            <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
+                        aria-expanded="true" aria-controls="collapseOne">
+                        Create
+                    </button>
+                </h5>
+            </div>
+
+            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                <div class="card-body">
+                    <form id='createForm'>
+                        <div class="form-group">
+                            <label for="number">Number</label>
+                            <input type="number" class="form-control" id="cnumber" aria-describedby="emailHelp"
+                                placeholder="Enter number">
+                        </div>
+                        <div class="form-group">
+                            <label for="ctypeOfContribution">Type of contribution</label>
+                            <input type="text" class="form-control" id="ctypeOfContribution" placeholder="Enter type of contribution">
+                        </div>
+                        <div class="form-group">
+                            <label for="cpin">PIN</label>
+                            <input type="number" class="form-control" id="cpin" placeholder="Enter PIN">
+                        </div>
+                        <div class="form-group">
+                            <label for="cbalance">Balance</label>
+                            <input type="number" min=1 class="form-control" id="cbalance" placeholder="Enter balance">
+                        </div>
+                        <button type="submit" id='cbutton' class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingTwo">
+                <h5 class="mb-0">
+                    <button id='rbutton' class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo"
+                        aria-expanded="false" aria-controls="collapseTwo">
+                        Read
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Number</th>
+                                <th scope="col">Type of contribution</th>
+                                <th scope="col">PIN</th>
+                                <th scope="col">Balance</th>
+                            </tr>
+                        </thead>
+                        <tbody id='rTBody'>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+                <h5 class="mb-0">
+                    <button id='pubutton' class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree"
+                        aria-expanded="false" aria-controls="collapseThree">
+                        Update
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                    <form id='updateForm'>
+                        <label for="uid">id</label>
+                            <select id="uid" class="form-control"></select>
+                        <div class="form-group">
+                            <label for="unumber">Number</label>
+                            <input type="number" class="form-control" id="unumber" aria-describedby="emailHelp"
+                                placeholder="Enter number">
+                        </div>
+                        <div class="form-group">
+                            <label for="utypeOfContribution">Type of contribution</label>
+                            <input type="text" class="form-control" id="utypeOfContribution" placeholder="Enter type of contribution">
+                        </div>
+                        <div class="form-group">
+                            <label for="upin">PIN</label>
+                            <input type="number" class="form-control" id="upin" placeholder="Enter PIN">
+                        </div>
+                        <div class="form-group">
+                            <label for="ubalance">Balance</label>
+                            <input type="number" min=1 class="form-control" id="ubalance" placeholder="Enter Balance">
+                        </div>
+                        <button type="submit" id='ubutton' class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingFour">
+                <h5 class="mb-0">
+                    <button id="pdbutton" class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseFour"
+                        aria-expanded="false" aria-controls="collapseFour">
+                        Delete
+                    </button>
+                </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                <div class="card-body">
+                    <form id='deleteForm'>
+                        <div class="form-group">
+                            <label for="did">ID</label>
+                            <select id="did" class="form-control"></select>
+                        </div>
+                        <button type="submit" id='dbutton' class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
