@@ -1,7 +1,7 @@
 # WEB
 WEB couers
 
-## ***Home Work #***
+## ***Home Work #1***
 [Task 1](https://mikitamezen.github.io/WEB/Home%20Work%201/Task%201/index.html)
 [Task 2](https://mikitamezen.github.io/WEB/Home%20Work%201/Task%202/index.html)
 [Task 3](https://mikitamezen.github.io/WEB/Home%20Work%201/Task%203/index.html)
