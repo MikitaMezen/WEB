@@ -10,3 +10,6 @@ WEB couers
 
 ## ***HW2***
 [Task 1](https://mikitamezen.github.io/WEB/Home%20Work%202/index.html)
+
+## ***HW3-4***
+[Task 1](https://mikitamezen.github.io/WEB/Home%20Work%203-4/index.html)
